@@ -1,5 +1,7 @@
 #!/usr/bin/bash
 
+nohup sqoop metastore &
+
 echo " Starting backup of USERS table"
 
 source users_backup.sh

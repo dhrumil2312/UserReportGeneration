@@ -10,7 +10,7 @@ hive -e "drop table if exists  pre_final;"
 
 hive -e "drop table if exists  user_files;"
 
-hive -e "drop table if exists  user_reports;"
+hive -e "drop table if exists  user_report;"
 
 
 hive -e "create table latest_activity_user as select user_id , type , if(unix_timestamp() - timestamp < 172800,1,0) is_active from (select * from (select * , row_number() over (partition by user_id order by timestamp desc) as rn from activitylog )a  where rn = 1) b;"

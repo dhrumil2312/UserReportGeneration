@@ -1,0 +1,21 @@
+Warning: /usr/lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+18/05/31 10:27:37 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.13.0
+18/05/31 10:27:37 WARN hsqldb.HsqldbMetaStore: The location for metastore data has not been explicitly set. Placing shared metastore files in /home/cloudera/.sqoop/shared-metastore.db
+[Server@77c63ba6]: [Thread[main,5,main]]: checkRunning(false) entered
+[Server@77c63ba6]: [Thread[main,5,main]]: checkRunning(false) exited
+[Server@77c63ba6]: [Thread[main,5,main]]: setDatabasePath(0,file:/home/cloudera/.sqoop/shared-metastore.db)
+[Server@77c63ba6]: [Thread[main,5,main]]: checkRunning(false) entered
+[Server@77c63ba6]: [Thread[main,5,main]]: checkRunning(false) exited
+[Server@77c63ba6]: [Thread[main,5,main]]: setDatabaseName(0,sqoop)
+[Server@77c63ba6]: [Thread[main,5,main]]: putPropertiesFromString(): [hsqldb.write_delay=false]
+[Server@77c63ba6]: [Thread[main,5,main]]: checkRunning(false) entered
+[Server@77c63ba6]: [Thread[main,5,main]]: checkRunning(false) exited
+[Server@77c63ba6]: Initiating startup sequence...
+[Server@77c63ba6]: Server socket opened successfully in 9 ms.
+[Server@77c63ba6]: Database [index=0, id=0, db=file:/home/cloudera/.sqoop/shared-metastore.db, alias=sqoop] opened sucessfully in 396 ms.
+[Server@77c63ba6]: Startup sequence completed in 410 ms.
+[Server@77c63ba6]: 2018-05-31 10:27:38.498 HSQLDB server 1.8.0 is online
+[Server@77c63ba6]: To close normally, connect and execute SHUTDOWN SQL
+[Server@77c63ba6]: From command line, use [Ctrl]+[C] to abort abruptly
+18/05/31 10:27:38 INFO hsqldb.HsqldbMetaStore: Server started on port 16000 with protocol HSQL
