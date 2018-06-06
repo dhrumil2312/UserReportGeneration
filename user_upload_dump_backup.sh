@@ -5,10 +5,40 @@
 # hadoop fs -mkdir /app/
 # hadoop fs -mkdir /app/data/
 # hadoop fs -mkdir /app/data/user_upload/
+# mkdir old_files/
 
 for filename in ./*csv ; do
 hadoop fs -put $filename /app/data/user_upload/
+if [ $? -eq 0 ]
+then
+        echo "$filename moved to hadoop"
+else
+        echo "Error in moving $filename to hadoop" >&2
+        exit 1
+fi
+
+mv $filename old_files/
+
+if [ $? -eq 0 ]
+then
+        echo "$filename moved to backup folder"
+else
+        echo "Error in moving $filename to backup folder" >&2
+        exit 1
+fi
+
 done
 
 
-hive -e "CREATE EXTERNAL TABLE IF NOT EXISTS user_upload_dump (user_id int, file_name STRING,     timestamp STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE LOCATION '/app/data/user_upload/' TBLPROPERTIES ('skip.header.line.count'='1');"
+
+
+hive -e "CREATE EXTERNAL TABLE IF NOT EXISTS user_upload_dump (user_id int, file_name STRING,     timestamp STRING) ROW FORMAT DELIMITED FIELDS TERMINATED BY ',' STORED AS TEXTFILE LOCATION '/app/data/user_upload/' TBLPROPERTIES ('skip.header.line.count'='1');" >> logs/users_upload_dumps.log 2>&1
+
+if [ $? -eq 0 ]
+then
+        echo "Hive command Ran successfully............."
+else
+        echo "Error in hive command......................." >&2
+        exit 1
+fi
+

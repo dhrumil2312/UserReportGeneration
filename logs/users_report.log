@@ -1,0 +1,454 @@
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+unix_timestamp(void) is deprecated. Use current_timestamp instead.
+Query ID = root_20180606162828_a82acbe1-7978-4bf6-b41c-a15ffc093a9f
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1528237215662_0028, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1528237215662_0028/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1528237215662_0028
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2018-06-06 16:29:02,307 Stage-1 map = 0%,  reduce = 0%
+2018-06-06 16:29:08,671 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.26 sec
+2018-06-06 16:29:16,016 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 3.3 sec
+MapReduce Total cumulative CPU time: 3 seconds 300 msec
+Ended Job = job_1528237215662_0028
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/latest_activity_user
+Table default.latest_activity_user stats: [numFiles=1, numRows=52, totalSize=616, rawDataSize=564]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 3.3 sec   HDFS Read: 31027 HDFS Write: 701 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 300 msec
+OK
+Time taken: 23.652 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+Query ID = root_20180606162929_49fb48a4-600d-4857-96ad-ab3352d1a41c
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1528237215662_0029, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1528237215662_0029/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1528237215662_0029
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2018-06-06 16:29:32,861 Stage-1 map = 0%,  reduce = 0%
+2018-06-06 16:29:39,230 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.22 sec
+2018-06-06 16:29:46,614 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 3.11 sec
+MapReduce Total cumulative CPU time: 3 seconds 110 msec
+Ended Job = job_1528237215662_0029
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/total_activity_user
+Table default.total_activity_user stats: [numFiles=1, numRows=52, totalSize=487, rawDataSize=435]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 3.11 sec   HDFS Read: 30250 HDFS Write: 571 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 110 msec
+OK
+Time taken: 23.301 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+Query ID = root_20180606162929_e7f3ac24-b1e7-4e38-a6f4-e57f41a0a01c
+Total jobs = 1
+Execution log at: /tmp/root/root_20180606162929_e7f3ac24-b1e7-4e38-a6f4-e57f41a0a01c.log
+2018-06-06 04:30:00	Starting to launch local task to process map join;	maximum memory = 932184064
+2018-06-06 04:30:01	Dump the side-table for tag: 0 with group count: 51 into file: file:/tmp/root/0ecba3fa-e8b4-46c0-a2e5-4b9f9e82cbe8/hive_2018-06-06_16-29-55_423_3606506804779134850-1/-local-10003/HashTable-Stage-4/MapJoin-mapfile00--.hashtable
+2018-06-06 04:30:01	Uploaded 1 File to: file:/tmp/root/0ecba3fa-e8b4-46c0-a2e5-4b9f9e82cbe8/hive_2018-06-06_16-29-55_423_3606506804779134850-1/-local-10003/HashTable-Stage-4/MapJoin-mapfile00--.hashtable (1387 bytes)
+2018-06-06 04:30:01	End of local task; Time Taken: 1.332 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1528237215662_0030, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1528237215662_0030/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1528237215662_0030
+Hadoop job information for Stage-4: number of mappers: 1; number of reducers: 0
+2018-06-06 16:30:12,391 Stage-4 map = 0%,  reduce = 0%
+2018-06-06 16:30:18,799 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 1.84 sec
+MapReduce Total cumulative CPU time: 1 seconds 840 msec
+Ended Job = job_1528237215662_0030
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/pre_final
+Table default.pre_final stats: [numFiles=1, numRows=51, totalSize=934, rawDataSize=883]
+MapReduce Jobs Launched: 
+Stage-Stage-4: Map: 1   Cumulative CPU: 1.84 sec   HDFS Read: 7427 HDFS Write: 1008 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 840 msec
+OK
+Time taken: 25.885 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+Query ID = root_20180606163030_ba99729b-3f73-43da-90db-db2498e54492
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1528237215662_0031, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1528237215662_0031/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1528237215662_0031
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2018-06-06 16:30:37,756 Stage-1 map = 0%,  reduce = 0%
+2018-06-06 16:30:44,089 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.13 sec
+2018-06-06 16:30:50,494 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 2.64 sec
+MapReduce Total cumulative CPU time: 2 seconds 640 msec
+Ended Job = job_1528237215662_0031
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/user_files
+Table default.user_files stats: [numFiles=1, numRows=50, totalSize=249, rawDataSize=199]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 2.64 sec   HDFS Read: 14113 HDFS Write: 324 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 640 msec
+OK
+Time taken: 23.045 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+Query ID = root_20180606163030_26ceac3e-e1d6-48fc-8102-a1823530c8b8
+Total jobs = 1
+Execution log at: /tmp/root/root_20180606163030_26ceac3e-e1d6-48fc-8102-a1823530c8b8.log
+2018-06-06 04:31:04	Starting to launch local task to process map join;	maximum memory = 932184064
+2018-06-06 04:31:05	Dump the side-table for tag: 1 with group count: 50 into file: file:/tmp/root/49c2480e-2be9-4c6d-a9c6-73c6bbb12167/hive_2018-06-06_16-30-59_528_7898725776914788701-1/-local-10003/HashTable-Stage-4/MapJoin-mapfile01--.hashtable
+2018-06-06 04:31:05	Uploaded 1 File to: file:/tmp/root/49c2480e-2be9-4c6d-a9c6-73c6bbb12167/hive_2018-06-06_16-30-59_528_7898725776914788701-1/-local-10003/HashTable-Stage-4/MapJoin-mapfile01--.hashtable (1263 bytes)
+2018-06-06 04:31:05	End of local task; Time Taken: 0.882 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1528237215662_0032, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1528237215662_0032/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1528237215662_0032
+Hadoop job information for Stage-4: number of mappers: 1; number of reducers: 0
+2018-06-06 16:31:13,239 Stage-4 map = 0%,  reduce = 0%
+2018-06-06 16:31:19,590 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 1.86 sec
+MapReduce Total cumulative CPU time: 1 seconds 860 msec
+Ended Job = job_1528237215662_0032
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/user_report
+Table default.user_report stats: [numFiles=1, numRows=51, totalSize=1048, rawDataSize=997]
+MapReduce Jobs Launched: 
+Stage-Stage-4: Map: 1   Cumulative CPU: 1.86 sec   HDFS Read: 7849 HDFS Write: 1124 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 860 msec
+OK
+Time taken: 21.524 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+unix_timestamp(void) is deprecated. Use current_timestamp instead.
+Query ID = root_20180606163232_cd0a1460-cfd7-4592-b077-3e3870a06e37
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1528237215662_0033, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1528237215662_0033/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1528237215662_0033
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2018-06-06 16:32:38,411 Stage-1 map = 0%,  reduce = 0%
+2018-06-06 16:32:44,816 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.6 sec
+2018-06-06 16:32:52,149 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 3.74 sec
+MapReduce Total cumulative CPU time: 3 seconds 740 msec
+Ended Job = job_1528237215662_0033
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/latest_activity_user
+Table default.latest_activity_user stats: [numFiles=1, numRows=52, totalSize=616, rawDataSize=564]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 3.74 sec   HDFS Read: 31027 HDFS Write: 701 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 740 msec
+OK
+Time taken: 26.048 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+Query ID = root_20180606163333_a12f5f7a-15cb-48f6-86fe-68667fd4d5f5
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1528237215662_0034, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1528237215662_0034/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1528237215662_0034
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2018-06-06 16:33:11,683 Stage-1 map = 0%,  reduce = 0%
+2018-06-06 16:33:17,106 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.21 sec
+2018-06-06 16:33:24,441 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 3.09 sec
+MapReduce Total cumulative CPU time: 3 seconds 90 msec
+Ended Job = job_1528237215662_0034
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/total_activity_user
+Table default.total_activity_user stats: [numFiles=1, numRows=52, totalSize=487, rawDataSize=435]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 3.09 sec   HDFS Read: 30250 HDFS Write: 571 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 90 msec
+OK
+Time taken: 23.652 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+Query ID = root_20180606163333_30e882f8-212f-474c-ba51-c9be17048444
+Total jobs = 1
+Execution log at: /tmp/root/root_20180606163333_30e882f8-212f-474c-ba51-c9be17048444.log
+2018-06-06 04:33:38	Starting to launch local task to process map join;	maximum memory = 932184064
+2018-06-06 04:33:39	Dump the side-table for tag: 0 with group count: 51 into file: file:/tmp/root/6b9fdbfb-adcc-4343-8464-fa49c8d3252b/hive_2018-06-06_16-33-33_071_4132589360000437172-1/-local-10003/HashTable-Stage-4/MapJoin-mapfile00--.hashtable
+2018-06-06 04:33:39	Uploaded 1 File to: file:/tmp/root/6b9fdbfb-adcc-4343-8464-fa49c8d3252b/hive_2018-06-06_16-33-33_071_4132589360000437172-1/-local-10003/HashTable-Stage-4/MapJoin-mapfile00--.hashtable (1387 bytes)
+2018-06-06 04:33:39	End of local task; Time Taken: 1.378 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1528237215662_0035, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1528237215662_0035/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1528237215662_0035
+Hadoop job information for Stage-4: number of mappers: 1; number of reducers: 0
+2018-06-06 16:33:48,027 Stage-4 map = 0%,  reduce = 0%
+2018-06-06 16:33:54,596 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 1.81 sec
+MapReduce Total cumulative CPU time: 1 seconds 810 msec
+Ended Job = job_1528237215662_0035
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/pre_final
+Table default.pre_final stats: [numFiles=1, numRows=51, totalSize=934, rawDataSize=883]
+MapReduce Jobs Launched: 
+Stage-Stage-4: Map: 1   Cumulative CPU: 1.81 sec   HDFS Read: 7427 HDFS Write: 1008 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 810 msec
+OK
+Time taken: 22.984 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+Query ID = root_20180606163434_cc0362a2-4314-479c-a374-bacc7dba6a73
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1528237215662_0036, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1528237215662_0036/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1528237215662_0036
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2018-06-06 16:34:12,258 Stage-1 map = 0%,  reduce = 0%
+2018-06-06 16:34:18,573 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.12 sec
+2018-06-06 16:34:23,869 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 2.48 sec
+MapReduce Total cumulative CPU time: 2 seconds 480 msec
+Ended Job = job_1528237215662_0036
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/user_files
+Table default.user_files stats: [numFiles=1, numRows=50, totalSize=249, rawDataSize=199]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 2.48 sec   HDFS Read: 14113 HDFS Write: 324 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 480 msec
+OK
+Time taken: 21.924 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+Query ID = root_20180606163434_afe0d186-e4b8-4b8b-ab72-0760f995c3aa
+Total jobs = 1
+Execution log at: /tmp/root/root_20180606163434_afe0d186-e4b8-4b8b-ab72-0760f995c3aa.log
+2018-06-06 04:34:37	Starting to launch local task to process map join;	maximum memory = 932184064
+2018-06-06 04:34:38	Dump the side-table for tag: 1 with group count: 50 into file: file:/tmp/root/37c75dd4-4076-4538-ab42-a8407ca45e7b/hive_2018-06-06_16-34-32_545_6555258554796974438-1/-local-10003/HashTable-Stage-4/MapJoin-mapfile01--.hashtable
+2018-06-06 04:34:38	Uploaded 1 File to: file:/tmp/root/37c75dd4-4076-4538-ab42-a8407ca45e7b/hive_2018-06-06_16-34-32_545_6555258554796974438-1/-local-10003/HashTable-Stage-4/MapJoin-mapfile01--.hashtable (1263 bytes)
+2018-06-06 04:34:38	End of local task; Time Taken: 0.95 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1528237215662_0037, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1528237215662_0037/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1528237215662_0037
+Hadoop job information for Stage-4: number of mappers: 1; number of reducers: 0
+2018-06-06 16:34:46,900 Stage-4 map = 0%,  reduce = 0%
+2018-06-06 16:34:52,348 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 1.76 sec
+MapReduce Total cumulative CPU time: 1 seconds 760 msec
+Ended Job = job_1528237215662_0037
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/user_report
+Table default.user_report stats: [numFiles=1, numRows=51, totalSize=1048, rawDataSize=997]
+MapReduce Jobs Launched: 
+Stage-Stage-4: Map: 1   Cumulative CPU: 1.76 sec   HDFS Read: 7849 HDFS Write: 1124 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 760 msec
+OK
+Time taken: 22.281 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+OK
+Time taken: 0.542 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+OK
+Time taken: 0.526 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+OK
+Time taken: 0.587 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+OK
+Time taken: 0.54 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+OK
+Time taken: 0.523 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+unix_timestamp(void) is deprecated. Use current_timestamp instead.
+Query ID = root_20180606163939_604ae12f-4bb0-4016-8d25-724490754ae7
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1528237215662_0038, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1528237215662_0038/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1528237215662_0038
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2018-06-06 16:39:14,535 Stage-1 map = 0%,  reduce = 0%
+2018-06-06 16:39:19,872 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.23 sec
+2018-06-06 16:39:27,208 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 3.24 sec
+MapReduce Total cumulative CPU time: 3 seconds 240 msec
+Ended Job = job_1528237215662_0038
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/latest_activity_user
+Table default.latest_activity_user stats: [numFiles=1, numRows=52, totalSize=616, rawDataSize=564]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 3.24 sec   HDFS Read: 31027 HDFS Write: 701 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 240 msec
+OK
+Time taken: 22.326 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+Query ID = root_20180606163939_65160fa7-c192-4957-a3f1-99d8a5c03935
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1528237215662_0039, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1528237215662_0039/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1528237215662_0039
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2018-06-06 16:39:44,221 Stage-1 map = 0%,  reduce = 0%
+2018-06-06 16:39:50,580 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.23 sec
+2018-06-06 16:39:58,011 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 3.19 sec
+MapReduce Total cumulative CPU time: 3 seconds 190 msec
+Ended Job = job_1528237215662_0039
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/total_activity_user
+Table default.total_activity_user stats: [numFiles=1, numRows=52, totalSize=487, rawDataSize=435]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 3.19 sec   HDFS Read: 30250 HDFS Write: 571 SUCCESS
+Total MapReduce CPU Time Spent: 3 seconds 190 msec
+OK
+Time taken: 23.64 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+Query ID = root_20180606164040_aafd6d3a-e02c-4758-b743-ad5eedaf9035
+Total jobs = 1
+Execution log at: /tmp/root/root_20180606164040_aafd6d3a-e02c-4758-b743-ad5eedaf9035.log
+2018-06-06 04:40:14	Starting to launch local task to process map join;	maximum memory = 932184064
+2018-06-06 04:40:15	Dump the side-table for tag: 0 with group count: 51 into file: file:/tmp/root/2bd42d37-c7f0-48b8-b87e-9a44565d768e/hive_2018-06-06_16-40-07_666_1386160561721804583-1/-local-10003/HashTable-Stage-4/MapJoin-mapfile00--.hashtable
+2018-06-06 04:40:15	Uploaded 1 File to: file:/tmp/root/2bd42d37-c7f0-48b8-b87e-9a44565d768e/hive_2018-06-06_16-40-07_666_1386160561721804583-1/-local-10003/HashTable-Stage-4/MapJoin-mapfile00--.hashtable (1387 bytes)
+2018-06-06 04:40:15	End of local task; Time Taken: 1.251 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1528237215662_0040, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1528237215662_0040/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1528237215662_0040
+Hadoop job information for Stage-4: number of mappers: 1; number of reducers: 0
+2018-06-06 16:40:24,389 Stage-4 map = 0%,  reduce = 0%
+2018-06-06 16:40:30,786 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 1.69 sec
+MapReduce Total cumulative CPU time: 1 seconds 690 msec
+Ended Job = job_1528237215662_0040
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/pre_final
+Table default.pre_final stats: [numFiles=1, numRows=51, totalSize=934, rawDataSize=883]
+MapReduce Jobs Launched: 
+Stage-Stage-4: Map: 1   Cumulative CPU: 1.69 sec   HDFS Read: 7427 HDFS Write: 1008 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 690 msec
+OK
+Time taken: 24.565 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+Query ID = root_20180606164040_5e8f96c5-be5b-43e1-be38-afd36dc2c7ce
+Total jobs = 1
+Launching Job 1 out of 1
+Number of reduce tasks not specified. Estimated from input data size: 1
+In order to change the average load for a reducer (in bytes):
+  set hive.exec.reducers.bytes.per.reducer=<number>
+In order to limit the maximum number of reducers:
+  set hive.exec.reducers.max=<number>
+In order to set a constant number of reducers:
+  set mapreduce.job.reduces=<number>
+Starting Job = job_1528237215662_0041, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1528237215662_0041/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1528237215662_0041
+Hadoop job information for Stage-1: number of mappers: 1; number of reducers: 1
+2018-06-06 16:40:48,431 Stage-1 map = 0%,  reduce = 0%
+2018-06-06 16:40:53,820 Stage-1 map = 100%,  reduce = 0%, Cumulative CPU 1.17 sec
+2018-06-06 16:41:01,184 Stage-1 map = 100%,  reduce = 100%, Cumulative CPU 2.9 sec
+MapReduce Total cumulative CPU time: 2 seconds 900 msec
+Ended Job = job_1528237215662_0041
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/user_files
+Table default.user_files stats: [numFiles=1, numRows=50, totalSize=249, rawDataSize=199]
+MapReduce Jobs Launched: 
+Stage-Stage-1: Map: 1  Reduce: 1   Cumulative CPU: 2.9 sec   HDFS Read: 14113 HDFS Write: 324 SUCCESS
+Total MapReduce CPU Time Spent: 2 seconds 900 msec
+OK
+Time taken: 23.139 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
+
+Logging initialized using configuration in file:/etc/hive/conf.dist/hive-log4j.properties
+Query ID = root_20180606164141_bf04a3c3-0cba-4e19-8275-ffb96b2f6002
+Total jobs = 1
+Execution log at: /tmp/root/root_20180606164141_bf04a3c3-0cba-4e19-8275-ffb96b2f6002.log
+2018-06-06 04:41:15	Starting to launch local task to process map join;	maximum memory = 932184064
+2018-06-06 04:41:16	Dump the side-table for tag: 1 with group count: 50 into file: file:/tmp/root/77caf7aa-ce94-4f84-9320-621c552109e0/hive_2018-06-06_16-41-10_078_7616033852559621970-1/-local-10003/HashTable-Stage-4/MapJoin-mapfile01--.hashtable
+2018-06-06 04:41:16	Uploaded 1 File to: file:/tmp/root/77caf7aa-ce94-4f84-9320-621c552109e0/hive_2018-06-06_16-41-10_078_7616033852559621970-1/-local-10003/HashTable-Stage-4/MapJoin-mapfile01--.hashtable (1263 bytes)
+2018-06-06 04:41:16	End of local task; Time Taken: 0.906 sec.
+Execution completed successfully
+MapredLocal task succeeded
+Launching Job 1 out of 1
+Number of reduce tasks is set to 0 since there's no reduce operator
+Starting Job = job_1528237215662_0042, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1528237215662_0042/
+Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1528237215662_0042

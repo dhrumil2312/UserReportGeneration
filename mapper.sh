@@ -1,33 +1,60 @@
 #!/usr/bin/bash
 
-nohup sqoop metastore &
 
 echo " Starting backup of USERS table"
 
-source users_backup.sh
+sh users_backup.sh
 
-echo "User backup done."
+if [ $? -eq 0 ]
+then
+	echo "User backup done."
+	echo "Starting Activity Log table backup"
+else
+	echo "Error in creating User Backup. Please check logs/users_backup.log for errors.  Exiting.........." >&2
+	exit 1
+fi
 
-echo "Starting Activity Log table backup"
+sh activity_log_backup.sh
 
-source activity_log_backup.sh false
+if [ $? -eq 0 ]
+then
+        echo "Activity Log Backup Done........"
+        echo "Starting User Upload Dump backup.............."
+else
+        echo "Error in creating Activity Log Backup. Please check logs/activitylogs.log for errors.  Exiting.........." >&2
+        exit 1
+fi
 
-echo " Activity log backup done"
+sh user_upload_dump_backup.sh
 
-echo " Starting User Upload Dump Backup"
+if [ $? -eq 0 ]
+then
+        echo "User upload dump backup done."
+        echo "Generating report for User Total........."
+else
+        echo "Error in creating User Upload Dump Backup. Please check logs/user_uploads_dump.log for errors.  Exiting.........." >&2
+        exit 1
+fi
 
-source user_upload_dump_backup.sh
+sh user_total.sh
 
-echo " User UPLOAD  Dump backup done"
+if [ $? -eq 0 ]
+then
+        echo "User Total Reprot Generated"
+        echo "Generating User Report"
+else
+        echo "Error in generating User Total Report. Please check logs/user_total.log for errors.  Exiting.........." >&2
+        exit 1
+fi
 
-echo " Generating report for User Total"
 
-source user_total.sh
+sh user_report.sh
 
-echo " User Total Report Generated"
+if [ $? -eq 0 ]
+then
+        echo "User Report Generated........."
+else
+        echo "Error in generating User Report. Please check logs/user_report.log for errors.  Exiting.........." >&2
+        exit 1
+fi
 
-echo " Generating User Report"
-
-source user_report.sh
-
-echo "User Report Generated"

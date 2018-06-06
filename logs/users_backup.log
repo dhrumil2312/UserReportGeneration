@@ -1,0 +1,268 @@
+Warning: /usr/lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+Warning: /usr/lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+18/06/06 16:12:58 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.14.2
+18/06/06 16:13:00 INFO manager.MySQLManager: Preparing to use a MySQL streaming resultset.
+18/06/06 16:13:00 INFO tool.CodeGenTool: Beginning code generation
+18/06/06 16:13:00 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `user` AS t LIMIT 1
+18/06/06 16:13:00 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `user` AS t LIMIT 1
+18/06/06 16:13:00 INFO orm.CompilationManager: HADOOP_MAPRED_HOME is /usr/lib/hadoop-mapreduce
+Note: /tmp/sqoop-root/compile/d22d34ebfe8945c1ae4986f94f458d92/user.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+18/06/06 16:13:02 INFO orm.CompilationManager: Writing jar file: /tmp/sqoop-root/compile/d22d34ebfe8945c1ae4986f94f458d92/user.jar
+18/06/06 16:13:02 WARN manager.MySQLManager: It looks like you are importing from mysql.
+18/06/06 16:13:02 WARN manager.MySQLManager: This transfer can be faster! Use the --direct
+18/06/06 16:13:02 WARN manager.MySQLManager: option to exercise a MySQL-specific fast path.
+18/06/06 16:13:02 INFO manager.MySQLManager: Setting zero DATETIME behavior to convertToNull (mysql)
+18/06/06 16:13:02 INFO mapreduce.ImportJobBase: Beginning import of user
+18/06/06 16:13:02 INFO Configuration.deprecation: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+18/06/06 16:13:02 INFO Configuration.deprecation: mapred.jar is deprecated. Instead, use mapreduce.job.jar
+18/06/06 16:13:02 INFO Configuration.deprecation: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+18/06/06 16:13:02 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+18/06/06 16:13:05 INFO db.DBInputFormat: Using read commited transaction isolation
+18/06/06 16:13:05 INFO db.DataDrivenDBInputFormat: BoundingValsQuery: SELECT MIN(`id`), MAX(`id`) FROM `user`
+18/06/06 16:13:05 INFO db.IntegerSplitter: Split size: 12; Num splits: 4 from: 1 to: 50
+18/06/06 16:13:05 INFO mapreduce.JobSubmitter: number of splits:4
+18/06/06 16:13:06 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1528237215662_0021
+18/06/06 16:13:06 INFO impl.YarnClientImpl: Submitted application application_1528237215662_0021
+18/06/06 16:13:06 INFO mapreduce.Job: The url to track the job: http://quickstart.cloudera:8088/proxy/application_1528237215662_0021/
+18/06/06 16:13:06 INFO mapreduce.Job: Running job: job_1528237215662_0021
+18/06/06 16:13:13 INFO mapreduce.Job: Job job_1528237215662_0021 running in uber mode : false
+18/06/06 16:13:13 INFO mapreduce.Job:  map 0% reduce 0%
+18/06/06 16:13:25 INFO mapreduce.Job:  map 25% reduce 0%
+18/06/06 16:13:27 INFO mapreduce.Job:  map 75% reduce 0%
+18/06/06 16:13:28 INFO mapreduce.Job:  map 100% reduce 0%
+18/06/06 16:13:28 INFO mapreduce.Job: Job job_1528237215662_0021 completed successfully
+18/06/06 16:13:28 INFO mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=691144
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=400
+		HDFS: Number of bytes written=385
+		HDFS: Number of read operations=16
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=8
+	Job Counters 
+		Launched map tasks=4
+		Other local map tasks=4
+		Total time spent by all maps in occupied slots (ms)=37639
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=37639
+		Total vcore-milliseconds taken by all map tasks=37639
+		Total megabyte-milliseconds taken by all map tasks=38542336
+	Map-Reduce Framework
+		Map input records=42
+		Map output records=42
+		Input split bytes=400
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=353
+		CPU time spent (ms)=2990
+		Physical memory (bytes) snapshot=843366400
+		Virtual memory (bytes) snapshot=6263717888
+		Total committed heap usage (bytes)=911212544
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=385
+18/06/06 16:13:28 INFO mapreduce.ImportJobBase: Transferred 385 bytes in 26.5622 seconds (14.4943 bytes/sec)
+18/06/06 16:13:28 INFO mapreduce.ImportJobBase: Retrieved 42 records.
+18/06/06 16:13:28 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `user` AS t LIMIT 1
+18/06/06 16:13:28 INFO hive.HiveImport: Loading uploaded data into Hive
+
+Logging initialized using configuration in jar:file:/usr/lib/hive/lib/hive-common-1.1.0-cdh5.14.2.jar!/hive-log4j.properties
+OK
+Time taken: 1.593 seconds
+Loading data to table default.users
+Table default.users stats: [numFiles=4, totalSize=385]
+OK
+Time taken: 0.628 seconds
+Warning: /usr/lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+18/06/06 16:23:16 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.14.2
+18/06/06 16:23:18 INFO manager.MySQLManager: Preparing to use a MySQL streaming resultset.
+18/06/06 16:23:18 INFO tool.CodeGenTool: Beginning code generation
+18/06/06 16:23:18 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `user` AS t LIMIT 1
+18/06/06 16:23:18 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `user` AS t LIMIT 1
+18/06/06 16:23:18 INFO orm.CompilationManager: HADOOP_MAPRED_HOME is /usr/lib/hadoop-mapreduce
+Note: /tmp/sqoop-root/compile/fca4064db33108689441c0676d2beb55/user.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+18/06/06 16:23:20 INFO orm.CompilationManager: Writing jar file: /tmp/sqoop-root/compile/fca4064db33108689441c0676d2beb55/user.jar
+18/06/06 16:23:20 WARN manager.MySQLManager: It looks like you are importing from mysql.
+18/06/06 16:23:20 WARN manager.MySQLManager: This transfer can be faster! Use the --direct
+18/06/06 16:23:20 WARN manager.MySQLManager: option to exercise a MySQL-specific fast path.
+18/06/06 16:23:20 INFO manager.MySQLManager: Setting zero DATETIME behavior to convertToNull (mysql)
+18/06/06 16:23:20 INFO mapreduce.ImportJobBase: Beginning import of user
+18/06/06 16:23:20 INFO Configuration.deprecation: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+18/06/06 16:23:20 INFO Configuration.deprecation: mapred.jar is deprecated. Instead, use mapreduce.job.jar
+18/06/06 16:23:20 INFO Configuration.deprecation: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+18/06/06 16:23:20 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+18/06/06 16:23:21 WARN hdfs.DFSClient: DataStreamer Exception
+java.nio.channels.ClosedByInterruptException
+	at java.nio.channels.spi.AbstractInterruptibleChannel.end(AbstractInterruptibleChannel.java:202)
+	at sun.nio.ch.SocketChannelImpl.write(SocketChannelImpl.java:496)
+	at org.apache.hadoop.net.SocketOutputStream$Writer.performIO(SocketOutputStream.java:63)
+	at org.apache.hadoop.net.SocketIOWithTimeout.doIO(SocketIOWithTimeout.java:142)
+	at org.apache.hadoop.net.SocketOutputStream.write(SocketOutputStream.java:159)
+	at org.apache.hadoop.net.SocketOutputStream.write(SocketOutputStream.java:117)
+	at java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:82)
+	at java.io.BufferedOutputStream.flush(BufferedOutputStream.java:140)
+	at java.io.DataOutputStream.flush(DataOutputStream.java:123)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:858)
+18/06/06 16:23:21 WARN hdfs.DFSClient: Caught exception 
+java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Thread.join(Thread.java:1281)
+	at java.lang.Thread.join(Thread.java:1355)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.closeResponder(DFSOutputStream.java:969)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.endBlock(DFSOutputStream.java:707)
+	at org.apache.hadoop.hdfs.DFSOutputStream$DataStreamer.run(DFSOutputStream.java:896)
+18/06/06 16:23:22 INFO db.DBInputFormat: Using read commited transaction isolation
+18/06/06 16:23:22 INFO db.DataDrivenDBInputFormat: BoundingValsQuery: SELECT MIN(`id`), MAX(`id`) FROM `user`
+18/06/06 16:23:22 INFO db.IntegerSplitter: Split size: 14; Num splits: 4 from: 1 to: 60
+18/06/06 16:23:22 INFO mapreduce.JobSubmitter: number of splits:4
+18/06/06 16:23:22 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1528237215662_0022
+18/06/06 16:23:22 INFO impl.YarnClientImpl: Submitted application application_1528237215662_0022
+18/06/06 16:23:22 INFO mapreduce.Job: The url to track the job: http://quickstart.cloudera:8088/proxy/application_1528237215662_0022/
+18/06/06 16:23:22 INFO mapreduce.Job: Running job: job_1528237215662_0022
+18/06/06 16:23:29 INFO mapreduce.Job: Job job_1528237215662_0022 running in uber mode : false
+18/06/06 16:23:29 INFO mapreduce.Job:  map 0% reduce 0%
+18/06/06 16:23:41 INFO mapreduce.Job:  map 25% reduce 0%
+18/06/06 16:23:43 INFO mapreduce.Job:  map 75% reduce 0%
+18/06/06 16:23:44 INFO mapreduce.Job:  map 100% reduce 0%
+18/06/06 16:23:44 INFO mapreduce.Job: Job job_1528237215662_0022 completed successfully
+18/06/06 16:23:44 INFO mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=691144
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=400
+		HDFS: Number of bytes written=464
+		HDFS: Number of read operations=16
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=8
+	Job Counters 
+		Launched map tasks=4
+		Other local map tasks=4
+		Total time spent by all maps in occupied slots (ms)=37838
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=37838
+		Total vcore-milliseconds taken by all map tasks=37838
+		Total megabyte-milliseconds taken by all map tasks=38746112
+	Map-Reduce Framework
+		Map input records=50
+		Map output records=50
+		Input split bytes=400
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=351
+		CPU time spent (ms)=3150
+		Physical memory (bytes) snapshot=796602368
+		Virtual memory (bytes) snapshot=6286544896
+		Total committed heap usage (bytes)=838860800
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=464
+18/06/06 16:23:44 INFO mapreduce.ImportJobBase: Transferred 464 bytes in 24.0904 seconds (19.2608 bytes/sec)
+18/06/06 16:23:44 INFO mapreduce.ImportJobBase: Retrieved 50 records.
+18/06/06 16:23:44 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `user` AS t LIMIT 1
+18/06/06 16:23:44 INFO hive.HiveImport: Loading uploaded data into Hive
+
+Logging initialized using configuration in jar:file:/usr/lib/hive/lib/hive-common-1.1.0-cdh5.14.2.jar!/hive-log4j.properties
+OK
+Time taken: 1.626 seconds
+Loading data to table default.users
+Table default.users stats: [numFiles=4, totalSize=464]
+OK
+Time taken: 0.686 seconds
+Warning: /usr/lib/sqoop/../accumulo does not exist! Accumulo imports will fail.
+Please set $ACCUMULO_HOME to the root of your Accumulo installation.
+18/06/06 16:26:01 INFO sqoop.Sqoop: Running Sqoop version: 1.4.6-cdh5.14.2
+18/06/06 16:26:02 INFO manager.MySQLManager: Preparing to use a MySQL streaming resultset.
+18/06/06 16:26:02 INFO tool.CodeGenTool: Beginning code generation
+18/06/06 16:26:03 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `user` AS t LIMIT 1
+18/06/06 16:26:03 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `user` AS t LIMIT 1
+18/06/06 16:26:03 INFO orm.CompilationManager: HADOOP_MAPRED_HOME is /usr/lib/hadoop-mapreduce
+Note: /tmp/sqoop-root/compile/18c5394238297caf9880077223fc56b4/user.java uses or overrides a deprecated API.
+Note: Recompile with -Xlint:deprecation for details.
+18/06/06 16:26:04 INFO orm.CompilationManager: Writing jar file: /tmp/sqoop-root/compile/18c5394238297caf9880077223fc56b4/user.jar
+18/06/06 16:26:04 WARN manager.MySQLManager: It looks like you are importing from mysql.
+18/06/06 16:26:04 WARN manager.MySQLManager: This transfer can be faster! Use the --direct
+18/06/06 16:26:04 WARN manager.MySQLManager: option to exercise a MySQL-specific fast path.
+18/06/06 16:26:04 INFO manager.MySQLManager: Setting zero DATETIME behavior to convertToNull (mysql)
+18/06/06 16:26:04 INFO mapreduce.ImportJobBase: Beginning import of user
+18/06/06 16:26:04 INFO Configuration.deprecation: mapred.job.tracker is deprecated. Instead, use mapreduce.jobtracker.address
+18/06/06 16:26:05 INFO Configuration.deprecation: mapred.jar is deprecated. Instead, use mapreduce.job.jar
+18/06/06 16:26:05 INFO Configuration.deprecation: mapred.map.tasks is deprecated. Instead, use mapreduce.job.maps
+18/06/06 16:26:05 INFO client.RMProxy: Connecting to ResourceManager at /0.0.0.0:8032
+18/06/06 16:26:07 INFO db.DBInputFormat: Using read commited transaction isolation
+18/06/06 16:26:07 INFO db.DataDrivenDBInputFormat: BoundingValsQuery: SELECT MIN(`id`), MAX(`id`) FROM `user`
+18/06/06 16:26:07 INFO db.IntegerSplitter: Split size: 14; Num splits: 4 from: 1 to: 60
+18/06/06 16:26:07 INFO mapreduce.JobSubmitter: number of splits:4
+18/06/06 16:26:07 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1528237215662_0024
+18/06/06 16:26:08 INFO impl.YarnClientImpl: Submitted application application_1528237215662_0024
+18/06/06 16:26:08 INFO mapreduce.Job: The url to track the job: http://quickstart.cloudera:8088/proxy/application_1528237215662_0024/
+18/06/06 16:26:08 INFO mapreduce.Job: Running job: job_1528237215662_0024
+18/06/06 16:26:15 INFO mapreduce.Job: Job job_1528237215662_0024 running in uber mode : false
+18/06/06 16:26:15 INFO mapreduce.Job:  map 0% reduce 0%
+18/06/06 16:26:27 INFO mapreduce.Job:  map 25% reduce 0%
+18/06/06 16:26:28 INFO mapreduce.Job:  map 50% reduce 0%
+18/06/06 16:26:29 INFO mapreduce.Job:  map 100% reduce 0%
+18/06/06 16:26:30 INFO mapreduce.Job: Job job_1528237215662_0024 completed successfully
+18/06/06 16:26:30 INFO mapreduce.Job: Counters: 30
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=691144
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		HDFS: Number of bytes read=400
+		HDFS: Number of bytes written=464
+		HDFS: Number of read operations=16
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=8
+	Job Counters 
+		Launched map tasks=4
+		Other local map tasks=4
+		Total time spent by all maps in occupied slots (ms)=35532
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=35532
+		Total vcore-milliseconds taken by all map tasks=35532
+		Total megabyte-milliseconds taken by all map tasks=36384768
+	Map-Reduce Framework
+		Map input records=50
+		Map output records=50
+		Input split bytes=400
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=376
+		CPU time spent (ms)=3000
+		Physical memory (bytes) snapshot=824578048
+		Virtual memory (bytes) snapshot=6289530880
+		Total committed heap usage (bytes)=838860800
+	File Input Format Counters 
+		Bytes Read=0
+	File Output Format Counters 
+		Bytes Written=464
+18/06/06 16:26:30 INFO mapreduce.ImportJobBase: Transferred 464 bytes in 25.5075 seconds (18.1907 bytes/sec)
+18/06/06 16:26:30 INFO mapreduce.ImportJobBase: Retrieved 50 records.
+18/06/06 16:26:30 INFO manager.SqlManager: Executing SQL statement: SELECT t.* FROM `user` AS t LIMIT 1
+18/06/06 16:26:30 INFO hive.HiveImport: Loading uploaded data into Hive
+
+Logging initialized using configuration in jar:file:/usr/lib/hive/lib/hive-common-1.1.0-cdh5.14.2.jar!/hive-log4j.properties
+OK
+Time taken: 1.492 seconds
+Loading data to table default.users
+Table default.users stats: [numFiles=4, totalSize=464]
+OK
+Time taken: 0.785 seconds
