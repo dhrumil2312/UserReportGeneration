@@ -452,3 +452,17 @@ Launching Job 1 out of 1
 Number of reduce tasks is set to 0 since there's no reduce operator
 Starting Job = job_1528237215662_0042, Tracking URL = http://quickstart.cloudera:8088/proxy/application_1528237215662_0042/
 Kill Command = /usr/lib/hadoop/bin/hadoop job  -kill job_1528237215662_0042
+Hadoop job information for Stage-4: number of mappers: 1; number of reducers: 0
+2018-06-06 16:41:23,596 Stage-4 map = 0%,  reduce = 0%
+2018-06-06 16:41:29,897 Stage-4 map = 100%,  reduce = 0%, Cumulative CPU 1.82 sec
+MapReduce Total cumulative CPU time: 1 seconds 820 msec
+Ended Job = job_1528237215662_0042
+Moving data to: hdfs://quickstart.cloudera:8020/user/hive/warehouse/user_report
+Table default.user_report stats: [numFiles=1, numRows=51, totalSize=1048, rawDataSize=997]
+MapReduce Jobs Launched: 
+Stage-Stage-4: Map: 1   Cumulative CPU: 1.82 sec   HDFS Read: 7849 HDFS Write: 1124 SUCCESS
+Total MapReduce CPU Time Spent: 1 seconds 820 msec
+OK
+Time taken: 21.178 seconds
+WARN: The method class org.apache.commons.logging.impl.SLF4JLogFactory#release() was invoked.
+WARN: Please see http://www.slf4j.org/codes.html#release for an explanation.
